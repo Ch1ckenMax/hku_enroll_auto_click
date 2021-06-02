@@ -1,5 +1,10 @@
 function proceedStep2Of3(){ //Click function
   document.getElementById("ptifrmtgtframe").contentDocument.getElementById("DERIVED_REGFRM1_LINK_ADD_ENRL$82$").click();
+  /* to be updated when I can access the step 3 of 3 page
+  document.getElementById("ptifrmtgtframe").onload = function() { 
+    document.getElementById("ptifrmtgtframe").contentDocument.getElementById("somerandombutton").click();
+  }
+  */
 }
 var miliseclater;
 do{

@@ -2,7 +2,7 @@ function proceedStep2Of3(){ //Click function
   let frame = document.getElementById("ptifrmtgtframe");
   frame.contentDocument.getElementById("DERIVED_REGFRM1_LINK_ADD_ENRL$82$").click();
   frame.onload = function() { 
-    frame.contentDocument.getElementById("somerandombutton").click();
+    frame.contentDocument.getElementById("DERIVED_REGFRM1_SSR_PB_SUBMIT").click();
   }
 }
 var miliseclater;

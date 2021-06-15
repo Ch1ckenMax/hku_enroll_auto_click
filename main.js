@@ -1,10 +1,8 @@
 function proceedStep2Of3(){ //Click function
   document.getElementById("ptifrmtgtframe").contentDocument.getElementById("DERIVED_REGFRM1_LINK_ADD_ENRL$82$").click();
-  /* to be updated when I can access the step 3 of 3 page
   document.getElementById("ptifrmtgtframe").onload = function() { 
     document.getElementById("ptifrmtgtframe").contentDocument.getElementById("somerandombutton").click();
   }
-  */
 }
 var miliseclater;
 do{
@@ -16,7 +14,7 @@ do{
   var hour = parseInt(prompt("Input hour"));
   var minute = parseInt(prompt("Input minute"));
   var timeNow = new Date(); //Retrieve current time
-  var clickTime = new Date(year,month - 1,day,hour,minute,0, 300); //Delay for 0.3 second as buffer
+  var clickTime = new Date(year,month - 1,day,hour,minute,0, 150); //Delay for 0.15 second as buffer
   miliseclater = clickTime - timeNow;
 }while(miliseclater <= 0);
 var timer = setTimeout(proceedStep2Of3, miliseclater);

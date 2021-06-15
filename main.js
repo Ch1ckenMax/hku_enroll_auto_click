@@ -1,7 +1,8 @@
 function proceedStep2Of3(){ //Click function
-  document.getElementById("ptifrmtgtframe").contentDocument.getElementById("DERIVED_REGFRM1_LINK_ADD_ENRL$82$").click();
-  document.getElementById("ptifrmtgtframe").onload = function() { 
-    document.getElementById("ptifrmtgtframe").contentDocument.getElementById("somerandombutton").click();
+  let frame = document.getElementById("ptifrmtgtframe");
+  frame.contentDocument.getElementById("DERIVED_REGFRM1_LINK_ADD_ENRL$82$").click();
+  frame.onload = function() { 
+    frame.contentDocument.getElementById("somerandombutton").click();
   }
 }
 var miliseclater;

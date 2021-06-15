@@ -15,7 +15,7 @@ do{
   var hour = parseInt(prompt("Input hour"));
   var minute = parseInt(prompt("Input minute"));
   var timeNow = new Date(); //Retrieve current time
-  var clickTime = new Date(year,month - 1,day,hour,minute,0, 150); //Delay for 0.15 second as buffer
+  var clickTime = new Date(year,month - 1,day,hour,minute,0, 100); //Delay for 0.1 second as buffer
   miliseclater = clickTime - timeNow;
 }while(miliseclater <= 0);
 var timer = setTimeout(proceedStep2Of3, miliseclater);

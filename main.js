@@ -12,7 +12,7 @@ do{
   let year = parseInt(prompt("Input Year"));
   let month = parseInt(prompt("Input Month"));
   let day = parseInt(prompt("Input Day"));
-  let hour = parseInt(prompt("Input hour"));
+  let hour = parseInt(prompt("Input hour (24-hour format)"));
   let minute = parseInt(prompt("Input minute"));
   let timeNow = new Date(); //Retrieve current time
   let clickTime = new Date(year,month - 1,day,hour,minute,0, 100); //Delay for 0.1 second as buffer

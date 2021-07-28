@@ -5,7 +5,7 @@ function proceedStep2Of3(){ //Click function
     frame.contentDocument.getElementById("DERIVED_REGFRM1_SSR_PB_SUBMIT").click();
   }
 }
-var miliseclater;
+var miliseclater = 0;
 do{
   alert("Please input the click time. Make sure that the time is later than current time.");
   //Prompt the click time

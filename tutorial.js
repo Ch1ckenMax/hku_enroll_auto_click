@@ -4,7 +4,7 @@
 //  document.getElementById("choice"+i).removeAttribute("disabled");
 //}
 
-var miliseclater, classNumber = -1;
+var miliseclater = 0, classNumber = -1;
 
 //Prompt for class num, validate format, and verify the existence of the class
 do{
@@ -29,15 +29,30 @@ do{
     alert("Class does not exist")
   
 }while(classNumber == -1); //-1 represents wrong input
-  
-do{
+
+while(miliseclater <= 0){
   alert("Please input the click time. Make sure that the time is later than current time.");
   //Prompt the click time
-  let hour = parseInt(prompt("Input hour (24-hour format)"));
-  let minute = parseInt(prompt("Input minute"));
+  let hour = prompt("Input hour (24-hour format)");
+  let minute = prompt("Input minute");
+  
+  //Validation
+  if(isNaN(hour) || isNaN(minute)){
+    alert("invalid input");
+    continue;
+  }
+
+  hour = parseInt(hour);
+  minute = parseInt(minute);
+  
+  if( (hour < 0 || hour >= 24) || (minute < 0 || minute >= 60) ){
+    alert("invalid time");
+    continue;
+  }
+  
   let timeNow = new Date(); //Retrieve current time
   let clickTime = new Date(timeNow.getFullYear(),timeNow.getMonth(),timeNow.getDate(),hour,minute,0, 100); //Delay for 0.1 second as buffer
   miliseclater = clickTime - timeNow;
-}while(miliseclater <= 0);
+}
 
 var timer = setTimeout( () => { document.getElementById("choice"+classNumber.toString()).click(); }, miliseclater);

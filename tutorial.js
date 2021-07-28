@@ -37,7 +37,7 @@ while(miliseclater <= 0){
   let minute = prompt("Input minute");
   
   //Validation
-  if(isNaN(hour) || isNaN(minute)){
+  if(hour.length == 0 || minute.length == 0 || isNaN(hour) || isNaN(minute)){
     alert("invalid input");
     continue;
   }

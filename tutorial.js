@@ -34,4 +34,4 @@ do{
   miliseclater = clickTime - timeNow;
 }while(miliseclater <= 0);
 
-var timer = setTimeout( () => { document.getElementById("choice"+classNumber.toString()); }, miliseclater);
+var timer = setTimeout( () => { document.getElementById("choice"+classNumber.toString()).click(); }, miliseclater);

@@ -1,3 +1,4 @@
+//For testing purpose
 //for(let i = 0; i < 12; i++){
 //  document.getElementById("choice"+i).onclick = ()=>{alert("doggo"+i)};
 //  document.getElementById("choice"+i).removeAttribute("disabled");

@@ -1,3 +1,8 @@
+//for(let i = 0; i < 12; i++){
+//  document.getElementById("choice"+i).onclick(()=>{alert("doggo"+i)});
+//  document.getElementById("choice"+i).removeAttribute("disabled");
+//}
+
 var miliseclater, classNumber = -1;
 
 //Prompt for class num, validate format, and verify the existence of the class

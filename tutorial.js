@@ -1,14 +1,14 @@
-function enrollTutorial(classNum){ //Click function
-  
-}
-
-var miliseclater, classNumber;
+var miliseclater, classNumber = -1;
 
 //Prompt for class num, validate format, and verify the existence of the class
 do{
-  let temp = prompt("Input class Number");
+  let temp = prompt("Input class Number (3-digit format)");
   
   //Validate format (is number, string length 3)
+  if(temp.length != 3 || isNaN(temp)){
+    alert("Wrong format")
+    continue;
+  }
  
   //Remove zeros at start of string
   if(temp[0] == '0')
@@ -16,8 +16,13 @@ do{
   if(temp[0] == '0')
     temp = temp.substr(1);
   
-  //
-}
+  //verify existence
+  if(document.getElementById("choice"+ (parseInt(temp) - 1).toString()) != null)
+    classNumber = parseInt(temp) - 1;
+  else
+    alert("Class does not exist")
+  
+}while(classNumber == -1); //-1 represents wrong input
   
 do{
   alert("Please input the click time. Make sure that the time is later than current time.");
@@ -29,4 +34,4 @@ do{
   miliseclater = clickTime - timeNow;
 }while(miliseclater <= 0);
 
-var timer = setTimeout( () => { enrollTutorial(classNumber); }, miliseclater);
+var timer = setTimeout( () => { document.getElementById("choice"+classNumber.toString()); }, miliseclater);

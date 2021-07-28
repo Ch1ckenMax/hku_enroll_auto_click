@@ -4,9 +4,11 @@ function enrollTutorial(classNum){ //Click function
 
 var miliseclater, classNumber;
 
-//Prompt for class num and verify the existence of the class
+//Prompt for class num, validate format, and verify the existence of the class
 do{
   let temp = prompt("Input class Number");
+  
+  //Validate format (is number, string length 3)
  
   //Remove zeros at start of string
   if(temp[0] == '0')

@@ -26,7 +26,7 @@ do{
   if(document.getElementById("choice"+ (parseInt(temp) - 1).toString()) != null)
     classNumber = parseInt(temp) - 1;
   else
-    alert("Class does not exist")
+    alert("Class does not exist");
   
 }while(classNumber == -1); //-1 represents wrong input
 

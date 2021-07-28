@@ -5,7 +5,9 @@ function proceedStep2Of3(){ //Click function
     frame.contentDocument.getElementById("DERIVED_REGFRM1_SSR_PB_SUBMIT").click();
   }
 }
+
 var miliseclater = 0;
+
 while(miliseclater <= 0){
   alert("Please input the click time. Make sure that the time is later than current time.");
   //Prompt the click time
@@ -30,5 +32,6 @@ while(miliseclater <= 0){
   let clickTime = new Date(timeNow.getFullYear(),timeNow.getMonth(),timeNow.getDate(),hour,minute,0, 100); //Delay for 0.1 second as buffer
   miliseclater = clickTime - timeNow;
 }
+
 var timer = setTimeout(proceedStep2Of3, miliseclater);
 

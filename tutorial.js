@@ -51,7 +51,7 @@ while(miliseclater <= 0){
   }
   
   let timeNow = new Date(); //Retrieve current time
-  let clickTime = new Date(timeNow.getFullYear(),timeNow.getMonth(),timeNow.getDate(),hour,minute,0, 100); //Delay for 0.1 second as buffer
+  let clickTime = new Date(timeNow.getFullYear(),timeNow.getMonth(),timeNow.getDate(),hour,minute,0, 50); //Delay for 0.1 second as buffer
   miliseclater = clickTime - timeNow;
 }
 

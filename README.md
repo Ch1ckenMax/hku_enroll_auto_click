@@ -16,4 +16,5 @@ For registering tutorials (The script is yet to be tested) <br>
     // @grant        GM_getValue
     // @grant        GM_deleteValue
     ```
-6. Refresh the webpage
+6. Save the script, and make sure the script is activated.
+7. Refresh the webpage

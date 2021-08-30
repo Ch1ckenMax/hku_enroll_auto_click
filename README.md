@@ -10,11 +10,12 @@ For registering tutorials (The script is yet to be tested) <br>
 2. Get to the register page (where you choose classes)
 3. Choose a class and remember the class number
 4. Create a new userscript in tampermonkey and paste the content in tutorial.js to tampermonkey's text editor
-5. Add these 3 lines between ``// ==UserScript==`` in tampermonkey's text editor
+5. Remove ``// @grant        no`` between ``// ==UserScript==`` in tampermonkey's text editor
+6. Add these 3 lines between ``// ==UserScript==`` in tampermonkey's text editor
     ```
     // @grant        GM_setValue
     // @grant        GM_getValue
     // @grant        GM_deleteValue
     ```
-6. Save the script, and make sure the script is activated.
-7. Refresh the webpage
+7. Save the script, and make sure the script is activated.
+8. Refresh the webpage

@@ -9,7 +9,7 @@ For registering tutorials (The script is yet to be tested) <br>
 1. Download tampermonkey chrome extension from here : https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en
 2. Get to the register page (where you choose classes)
 3. Choose a class and remember the class number
-4. Create a new userscript in tampermonkey and paste the content in tutorial.js to tampermonkey's text editor
+4. Create a new userscript in tampermonkey for this web page and paste the content in tutorial.js to tampermonkey's text editor
 5. Remove ``// @grant        no`` between ``// ==UserScript==`` in tampermonkey's text editor
 6. Add these 3 lines between ``// ==UserScript==`` in tampermonkey's text editor
     ```

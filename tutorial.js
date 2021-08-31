@@ -66,7 +66,7 @@
                 month = parseInt(month);
                 day = parseInt(day);
 
-                if( (hour < 0 || hour >= 24) || (minute < 0 || minute >= 60) || (month < 0 || month > 13) || (day < 0 || day > 31) ){
+                if( (hour < 0 || hour >= 24) || (minute < 0 || minute >= 60) || (month < 0 || month > 12) || (day < 0 || day > 31) ){
                     alert("invalid time/date");
                     continue;
                 }

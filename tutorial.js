@@ -56,7 +56,7 @@
                 let minute = prompt("Input minute");
 
                 //Validation
-                if(month.length == 0 || day.length == 0 || hour.length == 0 || minute.length == 0 || isNan(month) || isNan(day) || isNan(hour) || isNan(minute)){
+                if(month.length == 0 || day.length == 0 || hour.length == 0 || minute.length == 0 || isNaN(month) || isNaN(day) || isNaN(hour) || isNaN(minute)){
                     alert("invalid input");
                     continue;
                 }

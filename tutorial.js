@@ -74,6 +74,9 @@
                 let timeNow = new Date(); //Retrieve current time
                 let clickTime = new Date(timeNow.getFullYear(),month - 1,day,hour,minute,0, 50); //Delay for 0.05 second as buffer
                 miliseclater = clickTime - timeNow;
+                console.log(timeNow);
+                console.log(clickTime);
+                console.log(miliseclater);
             }
 
             var timer = setTimeout( () => {GM_setValue("status",true); GM_setValue("classNum","choice"+classNumber.toString()); window.location.reload(); } , miliseclater);

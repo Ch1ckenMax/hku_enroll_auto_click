@@ -50,25 +50,29 @@
             while(miliseclater <= 0){
                 alert("Please input the click time. Make sure that the time is later than current time.");
                 //Prompt the click time
+                let month = prompt("Input month");
+                let day = prompt("Input day");
                 let hour = prompt("Input hour (24-hour format)");
                 let minute = prompt("Input minute");
 
                 //Validation
-                if(hour.length == 0 || minute.length == 0 || isNaN(hour) || isNaN(minute)){
+                if(month.length == 0 || day.length == 0 || hour.length == 0 || minute.length == 0 || isNan(month) || isNan(day) || isNan(hour) || isNan(minute)){
                     alert("invalid input");
                     continue;
                 }
 
                 hour = parseInt(hour);
                 minute = parseInt(minute);
+                month = parseInt(month);
+                day = parseInt(day);
 
-                if( (hour < 0 || hour >= 24) || (minute < 0 || minute >= 60) ){
-                    alert("invalid time");
+                if( (hour < 0 || hour >= 24) || (minute < 0 || minute >= 60) || (month < 0 || month > 13) || (day < 0 || day > 31) ){
+                    alert("invalid time/date");
                     continue;
                 }
 
                 let timeNow = new Date(); //Retrieve current time
-                let clickTime = new Date(timeNow.getFullYear(),timeNow.getMonth(),timeNow.getDate(),hour,minute,0, 50); //Delay for 0.05 second as buffer
+                let clickTime = new Date(timeNow.getFullYear(),month,day,hour,minute,0, 50); //Delay for 0.05 second as buffer
                 miliseclater = clickTime - timeNow;
             }
 

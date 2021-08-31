@@ -72,7 +72,7 @@
                 }
 
                 let timeNow = new Date(); //Retrieve current time
-                let clickTime = new Date(timeNow.getFullYear(),month,day,hour,minute,0, 50); //Delay for 0.05 second as buffer
+                let clickTime = new Date(timeNow.getFullYear(),month - 1,day,hour,minute,0, 50); //Delay for 0.05 second as buffer
                 miliseclater = clickTime - timeNow;
             }
 

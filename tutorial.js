@@ -13,6 +13,8 @@
                 //document.getElementById(classNum).onclick = ()=>{alert(classNum)};
               
                 document.getElementById(classNum).click();
+                //Click the confirm button. async perhaps?
+                
             }
             else{
                 alert("error. cant find class variable");
@@ -72,7 +74,7 @@
                 }
 
                 let timeNow = new Date(); //Retrieve current time
-                let clickTime = new Date(timeNow.getFullYear(),month - 1,day,hour,minute,0, 50); //Delay for 0.05 second as buffer
+                let clickTime = new Date(timeNow.getFullYear(),month - 1,day,hour,minute,0, 150); //Delay for 0.15 second as buffer
                 miliseclater = clickTime - timeNow;
                 console.log(timeNow);
                 console.log(clickTime);

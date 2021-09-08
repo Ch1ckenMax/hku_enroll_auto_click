@@ -74,7 +74,7 @@
                 }
 
                 let timeNow = new Date(); //Retrieve current time
-                let clickTime = new Date(timeNow.getFullYear(),month - 1,day,hour,minute,0, 150); //Delay for 0.15 second as buffer
+                let clickTime = new Date(timeNow.getFullYear(),month - 1,day,hour,minute,0, 200); //Delay for 0.2 second as buffer
                 miliseclater = clickTime - timeNow;
                 console.log(timeNow);
                 console.log(clickTime);

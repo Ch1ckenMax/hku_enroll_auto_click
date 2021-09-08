@@ -13,7 +13,7 @@
                 //document.getElementById(classNum).onclick = ()=>{alert(classNum)};
               
                 document.getElementById(classNum).click();
-                document.getElementById("confirmToSubmit").click(); //Dialog box containing this button appears after the above click action. Need async? UNTESTED
+                document.getElementById("confirmToSubmit").click(); //Dialog box containing this button appears after the above click action.
                 
             }
             else{
